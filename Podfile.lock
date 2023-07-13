@@ -2,9 +2,14 @@ PODS:
   - Action (4.2.0):
     - RxCocoa (< 7.0, >= 5.0)
     - RxSwift (< 7.0, >= 5.0)
+  - ActionSheetPicker-3.0 (2.7.1)
   - Alamofire (5.2.1)
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
+  - CountryKit (2.0.1)
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
   - Differentiator (4.0.1)
   - IQKeyboardManagerSwift (6.5.12)
   - MaterialComponents/AnimationTiming (109.6.0)
@@ -72,6 +77,8 @@ PODS:
     - MaterialComponents/private/Math
   - MDFInternationalization (3.0.0)
   - MDFTextAccessibility (2.0.1)
+  - netfox (1.21.0)
+  - ProgressHUD (13.7.2)
   - R.swift (7.3.2)
   - Realm (10.41.0):
     - Realm/Headers (= 10.41.0)
@@ -104,10 +111,15 @@ PODS:
 
 DEPENDENCIES:
   - Action
+  - ActionSheetPicker-3.0
   - Alamofire (= 5.2.1)
   - AlamofireImage
+  - CountryKit (~> 2.0.0)
+  - DGCharts
   - IQKeyboardManagerSwift
   - MaterialComponents/Snackbar (= 109.6.0)
+  - netfox
+  - ProgressHUD
   - R.swift
   - RealmSwift
   - RxCocoa (~> 5.0)
@@ -121,13 +133,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Action
+    - ActionSheetPicker-3.0
     - Alamofire
     - AlamofireImage
+    - CountryKit
+    - DGCharts
     - Differentiator
     - IQKeyboardManagerSwift
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
+    - netfox
+    - ProgressHUD
     - R.swift
     - Realm
     - RealmSwift
@@ -142,13 +159,18 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Action: 5dc2194f7a0b77857c82a677b0da655f197c005f
+  ActionSheetPicker-3.0: 36da254b97a09ff89679ecb8b8510bd3e5bdc773
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
+  CountryKit: 29eeed8159ddfe30056cf5fbe68ad8ab111e8139
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
   MaterialComponents: 7c5a7d77fbe08aca9383fc97aeb7423b1fbce6b4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
+  netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
+  ProgressHUD: 093d24ca970f191744017bee2649e37d0cd1c5b9
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   Realm: 669efee7dc1ce0aa9f6739a60f8c0df0a3835067
   RealmSwift: 6b7b0e91b79dc66d5cfceeb3b319cacfc9b1a70e
@@ -161,6 +183,6 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 8e968593f56dee8482356be5e32146f3f611a465
+PODFILE CHECKSUM: 5128e3dd85893866458bf85ec6292a3943c461d5
 
 COCOAPODS: 1.12.1

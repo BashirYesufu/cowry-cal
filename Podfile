@@ -14,6 +14,10 @@ target 'cowry-cal' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'DGCharts'
   pod 'IQKeyboardManagerSwift'
+  pod 'CountryKit', '~> 2.0.0'
+  pod 'ProgressHUD'
+  pod 'ActionSheetPicker-3.0'
+
 
   #Rx
   pod 'RxSwift', '~> 5.0'
@@ -23,11 +27,12 @@ target 'cowry-cal' do
   pod 'Action'
   pod 'RxDataSources'
   pod 'R.swift'
+  pod 'netfox'
 
   post_install do |installer|
   installer.pods_project.targets.each do |target|
   target.build_configurations.each do |config|
-  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
   end
   end
   end

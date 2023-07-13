@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		407D65BB34BBF0C5D82CA089 /* Pods_cowry_cal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F3FD2190E324920CB5D23A /* Pods_cowry_cal.framework */; };
+		CA72DEEE2A5FF765004C3FE0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEED2A5FF765004C3FE0 /* ApiClient.swift */; };
+		CA72DEF02A60173E004C3FE0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEEF2A60173E004C3FE0 /* DashboardViewModel.swift */; };
+		CA72DEF32A602048004C3FE0 /* CowryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEF22A602048004C3FE0 /* CowryModels.swift */; };
+		CA72DEF82A602D11004C3FE0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEF72A602D11004C3FE0 /* UIViewController+Extension.swift */; };
 		CA86261C2A5F414D004EA00E /* CowryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA86261B2A5F414D004EA00E /* CowryButton.swift */; };
 		CA88DD582A5F5AF600AE766E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88DD572A5F5AF600AE766E /* R.generated.swift */; };
 		CA88DD702A5F5CEB00AE766E /* MontserratAlternates-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA88DD5E2A5F5CEA00AE766E /* MontserratAlternates-ThinItalic.ttf */; };
@@ -30,7 +34,6 @@
 		CA88DD812A5F5CEB00AE766E /* MontserratAlternates-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA88DD6F2A5F5CEB00AE766E /* MontserratAlternates-ExtraBold.ttf */; };
 		CA88DD842A5F5D2200AE766E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA88DD832A5F5D2200AE766E /* Colors.xcassets */; };
 		CA88DD882A5F6B3000AE766E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88DD872A5F6B3000AE766E /* UIView+Extension.swift */; };
-		CA88DD8A2A5F6CA700AE766E /* CowryInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA88DD892A5F6CA700AE766E /* CowryInputField.swift */; };
 		CAFB1B122A5F2FA000D1F6DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB1B112A5F2FA000D1F6DB /* AppDelegate.swift */; };
 		CAFB1B142A5F2FA000D1F6DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB1B132A5F2FA000D1F6DB /* SceneDelegate.swift */; };
 		CAFB1B162A5F2FA000D1F6DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFB1B152A5F2FA000D1F6DB /* ViewController.swift */; };
@@ -43,6 +46,10 @@
 		56F25D78ED4C8CA807B97C50 /* Pods-cowry-cal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cowry-cal.debug.xcconfig"; path = "Target Support Files/Pods-cowry-cal/Pods-cowry-cal.debug.xcconfig"; sourceTree = "<group>"; };
 		7657958B878A757AE2F55B10 /* Pods-cowry-cal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cowry-cal.release.xcconfig"; path = "Target Support Files/Pods-cowry-cal/Pods-cowry-cal.release.xcconfig"; sourceTree = "<group>"; };
 		B9F3FD2190E324920CB5D23A /* Pods_cowry_cal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cowry_cal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA72DEED2A5FF765004C3FE0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		CA72DEEF2A60173E004C3FE0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		CA72DEF22A602048004C3FE0 /* CowryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowryModels.swift; sourceTree = "<group>"; };
+		CA72DEF72A602D11004C3FE0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		CA86261B2A5F414D004EA00E /* CowryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowryButton.swift; sourceTree = "<group>"; };
 		CA88DD572A5F5AF600AE766E /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		CA88DD5E2A5F5CEA00AE766E /* MontserratAlternates-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ThinItalic.ttf"; sourceTree = "<group>"; };
@@ -65,7 +72,6 @@
 		CA88DD6F2A5F5CEB00AE766E /* MontserratAlternates-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MontserratAlternates-ExtraBold.ttf"; sourceTree = "<group>"; };
 		CA88DD832A5F5D2200AE766E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CA88DD872A5F6B3000AE766E /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		CA88DD892A5F6CA700AE766E /* CowryInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowryInputField.swift; sourceTree = "<group>"; };
 		CAFB1B0E2A5F2FA000D1F6DB /* cowry-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cowry-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFB1B112A5F2FA000D1F6DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFB1B132A5F2FA000D1F6DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CA72DEEC2A5FF75A004C3FE0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CA72DEED2A5FF765004C3FE0 /* ApiClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CA72DEF12A602038004C3FE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA72DEF22A602048004C3FE0 /* CowryModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CA8626172A5F40BB004EA00E /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +149,7 @@
 			children = (
 				CAFB1B172A5F2FA000D1F6DB /* Main.storyboard */,
 				CAFB1B152A5F2FA000D1F6DB /* ViewController.swift */,
+				CA72DEEF2A60173E004C3FE0 /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -135,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				CA86261B2A5F414D004EA00E /* CowryButton.swift */,
-				CA88DD892A5F6CA700AE766E /* CowryInputField.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -204,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CA88DD872A5F6B3000AE766E /* UIView+Extension.swift */,
+				CA72DEF72A602D11004C3FE0 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,6 +253,8 @@
 		CAFB1B102A5F2FA000D1F6DB /* cowry-cal */ = {
 			isa = PBXGroup;
 			children = (
+				CA72DEF12A602038004C3FE0 /* Models */,
+				CA72DEEC2A5FF75A004C3FE0 /* API */,
 				CA88DD862A5F6B1A00AE766E /* Extensions */,
 				CA88DD852A5F61B100AE766E /* AppDelegates */,
 				CA88DD592A5F5C7800AE766E /* Resources */,
@@ -384,7 +409,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -397,13 +422,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA72DEF82A602D11004C3FE0 /* UIViewController+Extension.swift in Sources */,
 				CA88DD882A5F6B3000AE766E /* UIView+Extension.swift in Sources */,
 				CA88DD582A5F5AF600AE766E /* R.generated.swift in Sources */,
 				CA86261C2A5F414D004EA00E /* CowryButton.swift in Sources */,
+				CA72DEF02A60173E004C3FE0 /* DashboardViewModel.swift in Sources */,
+				CA72DEEE2A5FF765004C3FE0 /* ApiClient.swift in Sources */,
 				CAFB1B162A5F2FA000D1F6DB /* ViewController.swift in Sources */,
 				CAFB1B122A5F2FA000D1F6DB /* AppDelegate.swift in Sources */,
 				CAFB1B142A5F2FA000D1F6DB /* SceneDelegate.swift in Sources */,
-				CA88DD8A2A5F6CA700AE766E /* CowryInputField.swift in Sources */,
+				CA72DEF32A602048004C3FE0 /* CowryModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
