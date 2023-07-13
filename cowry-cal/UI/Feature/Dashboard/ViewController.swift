@@ -51,6 +51,7 @@ class ViewController: UIViewController {
         setupUI()
     }
     
+    //MARK: - Setup tag gestures for the Ui components
     private func addGestures(){
         fromView.addTapGestureRecognizer { [self] in
             ActionSheetStringPicker.show(withTitle: "Pick a currency", rows: self.symbols, initialSelection: 0, doneBlock: { picker, index, item in
@@ -115,6 +116,7 @@ class ViewController: UIViewController {
         }
     }
     
+    //MARK: - Setup Ui component customisations
     private func setupUI(){
         sixtyDay.textColor = .lightGray
         sixtyDayIndicator.backgroundColor = R.color.cowryBlue()!
@@ -134,6 +136,7 @@ class ViewController: UIViewController {
         charts.data = data
     }
     
+    //MARK: - Bind view model responses to UI elements
     private func bindViewModel(){
         viewModel.getAllSymbols()
         viewModel.getDayFluctuation(days: 30)

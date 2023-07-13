@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Custom buton 
 class CowryButton: UIView {
     
     @IBInspectable

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		407D65BB34BBF0C5D82CA089 /* Pods_cowry_cal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F3FD2190E324920CB5D23A /* Pods_cowry_cal.framework */; };
 		CA68DD3C2A60A64700175780 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68DD3B2A60A64600175780 /* Date+Extension.swift */; };
-		CA72DEEE2A5FF765004C3FE0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEED2A5FF765004C3FE0 /* ApiClient.swift */; };
 		CA72DEF02A60173E004C3FE0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEEF2A60173E004C3FE0 /* DashboardViewModel.swift */; };
 		CA72DEF32A602048004C3FE0 /* CowryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEF22A602048004C3FE0 /* CowryModels.swift */; };
 		CA72DEF82A602D11004C3FE0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEF72A602D11004C3FE0 /* UIViewController+Extension.swift */; };
@@ -48,7 +47,6 @@
 		7657958B878A757AE2F55B10 /* Pods-cowry-cal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cowry-cal.release.xcconfig"; path = "Target Support Files/Pods-cowry-cal/Pods-cowry-cal.release.xcconfig"; sourceTree = "<group>"; };
 		B9F3FD2190E324920CB5D23A /* Pods_cowry_cal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cowry_cal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA68DD3B2A60A64600175780 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		CA72DEED2A5FF765004C3FE0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		CA72DEEF2A60173E004C3FE0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		CA72DEF22A602048004C3FE0 /* CowryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowryModels.swift; sourceTree = "<group>"; };
 		CA72DEF72A602D11004C3FE0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -111,14 +109,6 @@
 				7657958B878A757AE2F55B10 /* Pods-cowry-cal.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		CA72DEEC2A5FF75A004C3FE0 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				CA72DEED2A5FF765004C3FE0 /* ApiClient.swift */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		CA72DEF12A602038004C3FE0 /* Models */ = {
@@ -257,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				CA72DEF12A602038004C3FE0 /* Models */,
-				CA72DEEC2A5FF75A004C3FE0 /* API */,
 				CA88DD862A5F6B1A00AE766E /* Extensions */,
 				CA88DD852A5F61B100AE766E /* AppDelegates */,
 				CA88DD592A5F5C7800AE766E /* Resources */,
@@ -431,7 +420,6 @@
 				CA88DD582A5F5AF600AE766E /* R.generated.swift in Sources */,
 				CA86261C2A5F414D004EA00E /* CowryButton.swift in Sources */,
 				CA72DEF02A60173E004C3FE0 /* DashboardViewModel.swift in Sources */,
-				CA72DEEE2A5FF765004C3FE0 /* ApiClient.swift in Sources */,
 				CAFB1B162A5F2FA000D1F6DB /* ViewController.swift in Sources */,
 				CAFB1B122A5F2FA000D1F6DB /* AppDelegate.swift in Sources */,
 				CAFB1B142A5F2FA000D1F6DB /* SceneDelegate.swift in Sources */,

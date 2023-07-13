@@ -18,7 +18,6 @@ struct CurrencySymbols {
     }
 }
 
-
 struct ConversionResponse {
     let success: Bool
     let from: String
