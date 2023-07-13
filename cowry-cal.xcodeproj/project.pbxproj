@@ -47,6 +47,9 @@
 		7657958B878A757AE2F55B10 /* Pods-cowry-cal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cowry-cal.release.xcconfig"; path = "Target Support Files/Pods-cowry-cal/Pods-cowry-cal.release.xcconfig"; sourceTree = "<group>"; };
 		B9F3FD2190E324920CB5D23A /* Pods_cowry_cal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cowry_cal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA68DD3B2A60A64600175780 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		CA68DD3E2A60BF3100175780 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		CA68DD3F2A60BF3100175780 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		CA68DD402A60BF3100175780 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 		CA72DEEF2A60173E004C3FE0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		CA72DEF22A602048004C3FE0 /* CowryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowryModels.swift; sourceTree = "<group>"; };
 		CA72DEF72A602D11004C3FE0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -109,6 +112,16 @@
 				7657958B878A757AE2F55B10 /* Pods-cowry-cal.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA68DD3D2A60BF0000175780 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				CA68DD3E2A60BF3100175780 /* 1.png */,
+				CA68DD3F2A60BF3100175780 /* 2.png */,
+				CA68DD402A60BF3100175780 /* 3.png */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 		CA72DEF12A602038004C3FE0 /* Models */ = {
@@ -227,6 +240,7 @@
 		CAFB1B052A5F2FA000D1F6DB = {
 			isa = PBXGroup;
 			children = (
+				CA68DD3D2A60BF0000175780 /* Documentation */,
 				CA88DD572A5F5AF600AE766E /* R.generated.swift */,
 				CAFB1B102A5F2FA000D1F6DB /* cowry-cal */,
 				CAFB1B0F2A5F2FA000D1F6DB /* Products */,
