@@ -46,7 +46,11 @@ class DashboardViewModel {
                     self.progress.accept(false)
                     let json = JSON(data)
                     let currencySymbols = CurrencySymbols(json: json)
-                    self.currencySymbolsResponse.accept(currencySymbols.symbols)
+                    if currencySymbols.success {
+                        self.currencySymbolsResponse.accept(currencySymbols.symbols)
+                    } else {
+                        self.error.onNext("Unable to get currencies")
+                    }
                     
                 case .failure(let error):
                     self.progress.accept(false)
@@ -88,8 +92,12 @@ class DashboardViewModel {
                 case .success(let data):
                     self.progress.accept(false)
                     let json = JSON(data)
-                    let currencySymbols = CurrencySymbols(json: json)
-                    self.currencySymbolsResponse.accept(currencySymbols.symbols)
+                    let response = ConversionResponse(json: json)
+                    if response.success {
+                        self.currencyConversionResponse.accept(response)
+                    } else {
+                        self.error.onNext(response.error?.info ?? "Error converting currencies")
+                    }
                     
                 case .failure(let error):
                     self.progress.accept(false)

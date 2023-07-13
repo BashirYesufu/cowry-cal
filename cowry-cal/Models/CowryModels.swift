@@ -29,6 +29,7 @@ struct ConversionResponse {
     let historical: String
     let date: String
     let result: Double
+    let error: ConvError?
     
     init(json: JSON) {
         success = json["success"].boolValue
@@ -40,5 +41,18 @@ struct ConversionResponse {
         historical = json["historical"].stringValue
         date = json["date"].stringValue
         result = json["result"].doubleValue
+        error = ConvError(json: json["error"])
+    }
+}
+
+struct ConvError {
+    let type: String?
+    let info: String?
+    let code: Int?
+    
+    init(json: JSON) {
+        type = json["type"].stringValue
+        info = json["info"].stringValue
+        code = json["code"].intValue
     }
 }
