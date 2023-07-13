@@ -26,7 +26,7 @@ class CowryButton: UIView {
     lazy var label: UILabel = {
         let label = UILabel()
         label.text = title
-        label.font = R.font.montserratAlternatesMedium(size: 14)
+        label.font = R.font.montserratAlternatesSemiBold(size: 14)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -39,6 +39,6 @@ class CowryButton: UIView {
         self.backgroundColor = color
         self.heightAnchor.constraint(equalToConstant: 50).isActive = true
         self.isUserInteractionEnabled = isEnabled
-        self.layer.cornerRadius = 15
+        self.layer.cornerRadius = 8
     }
 }
