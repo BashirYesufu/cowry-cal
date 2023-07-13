@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Custom buton 
 class CowryButton: UIView {
     
     @IBInspectable
@@ -37,7 +38,7 @@ class CowryButton: UIView {
         label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         self.backgroundColor = color
-        self.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        self.heightAnchor.constraint(equalToConstant: 40).isActive = true
         self.isUserInteractionEnabled = isEnabled
         self.layer.cornerRadius = 8
     }
