@@ -6,6 +6,7 @@ PODS:
   - AlamofireImage (4.1.0):
     - Alamofire (~> 5.1)
   - Differentiator (4.0.1)
+  - IQKeyboardManagerSwift (6.5.12)
   - MaterialComponents/AnimationTiming (109.6.0)
   - MaterialComponents/Availability (109.6.0)
   - MaterialComponents/Buttons (109.6.0):
@@ -71,7 +72,7 @@ PODS:
     - MaterialComponents/private/Math
   - MDFInternationalization (3.0.0)
   - MDFTextAccessibility (2.0.1)
-  - R.swift (7.2.4)
+  - R.swift (7.3.2)
   - Realm (10.41.0):
     - Realm/Headers (= 10.41.0)
   - Realm/Headers (10.41.0)
@@ -98,12 +99,14 @@ PODS:
   - RxSwiftExt/RxCocoa (5.2.0):
     - RxCocoa (~> 5.0)
     - RxSwiftExt/Core
+  - SnapKit (4.0.1)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Action
   - Alamofire (= 5.2.1)
   - AlamofireImage
+  - IQKeyboardManagerSwift
   - MaterialComponents/Snackbar (= 109.6.0)
   - R.swift
   - RealmSwift
@@ -112,6 +115,7 @@ DEPENDENCIES:
   - RxOptional
   - RxSwift (~> 5.0)
   - RxSwiftExt (~> 5.0)
+  - SnapKit (~> 4.0.0)
   - SwiftyJSON (~> 5.0)
 
 SPEC REPOS:
@@ -120,6 +124,7 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - Differentiator
+    - IQKeyboardManagerSwift
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
@@ -132,6 +137,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - RxSwiftExt
+    - SnapKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -139,10 +145,11 @@ SPEC CHECKSUMS:
   Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
   AlamofireImage: c4a2ba349885fb3064feb74d2e547bd42ce9be10
   Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  IQKeyboardManagerSwift: 371b08cb39664fb56030f5345c815a4ffc74bbc0
   MaterialComponents: 7c5a7d77fbe08aca9383fc97aeb7423b1fbce6b4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
-  R.swift: 681bb9135f482e7a81d9d27445b837fef5467e11
+  R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   Realm: 669efee7dc1ce0aa9f6739a60f8c0df0a3835067
   RealmSwift: 6b7b0e91b79dc66d5cfceeb3b319cacfc9b1a70e
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
@@ -151,8 +158,9 @@ SPEC CHECKSUMS:
   RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   RxSwiftExt: 4ca80336f43c28f11a2825cdd2fc61dd6c044697
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 0a4b488ff1da42a37a22b35f1836e14e98493b93
+PODFILE CHECKSUM: 8e968593f56dee8482356be5e32146f3f611a465
 
 COCOAPODS: 1.12.1

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '13.0'
 
 target 'cowry-cal' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -11,6 +11,9 @@ target 'cowry-cal' do
   pod 'RealmSwift'
   pod 'MaterialComponents/Snackbar','109.6.0'
   pod 'SwiftyJSON', '~> 5.0'
+  pod 'SnapKit', '~> 4.0.0'
+  # pod 'Charts', :git => 'https://github.com/danielgindi/Charts.git', :branch => 'master'
+  pod 'IQKeyboardManagerSwift'
 
   #Rx
   pod 'RxSwift', '~> 5.0'
@@ -20,5 +23,13 @@ target 'cowry-cal' do
   pod 'Action'
   pod 'RxDataSources'
   pod 'R.swift'
+
+  post_install do |installer|
+  installer.pods_project.targets.each do |target|
+  target.build_configurations.each do |config|
+  config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+  end
+  end
+  end
 
 end
