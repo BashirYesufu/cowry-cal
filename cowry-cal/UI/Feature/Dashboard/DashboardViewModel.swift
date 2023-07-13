@@ -26,7 +26,7 @@ class DashboardViewModel {
             }
     }
     
-    let apiKey = "47e6a4a2c888adedce7afa9930d091c4"
+    let apiKey = ""
     
     let error = PublishSubject<String>()
     let progress = BehaviorRelay<Bool>(value: false)
