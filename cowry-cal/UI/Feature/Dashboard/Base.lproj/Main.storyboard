@@ -317,9 +317,95 @@
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jeu-nT-R45">
                                                 <rect key="frame" x="0.0" y="570" width="414" height="430"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RIh-5i-f9w">
+                                                        <rect key="frame" x="20" y="20" width="374" height="350"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8x7-2d-boK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XNl-jx-Yfx">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="114" height="29"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Past 30 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAQ-tZ-75g">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="114" height="21"/>
+                                                                                <fontDescription key="fontDescription" name="MontserratAlternates-SemiBold" family="Montserrat Alternates" pointSize="17"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Gz-A1-i6i">
+                                                                                <rect key="frame" x="53" y="21" width="8" height="8"/>
+                                                                                <color key="backgroundColor" name="Cowry-Green"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="8" id="Wq7-ec-hLS"/>
+                                                                                    <constraint firstAttribute="height" constant="8" id="hfx-31-VgW"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="customCornerRadius">
+                                                                                        <real key="value" value="4"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6so-ts-HZE">
+                                                                        <rect key="frame" x="259" y="0.0" width="115" height="29"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Past 60 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayU-lO-7T6">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="115" height="21"/>
+                                                                                <fontDescription key="fontDescription" name="MontserratAlternates-SemiBold" family="Montserrat Alternates" pointSize="17"/>
+                                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JqP-sI-trI">
+                                                                                <rect key="frame" x="53.5" y="21" width="8" height="8"/>
+                                                                                <color key="backgroundColor" name="Cowry-Green"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="8" id="FOh-Wm-zWI"/>
+                                                                                    <constraint firstAttribute="height" constant="8" id="G1J-ws-BjD"/>
+                                                                                </constraints>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="customCornerRadius">
+                                                                                        <real key="value" value="4"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </view>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPe-3H-jay" customClass="LineChartView" customModule="DGCharts">
+                                                                <rect key="frame" x="0.0" y="29" width="374" height="306.5"/>
+                                                                <color key="backgroundColor" name="Cowry-Blue"/>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yj5-a5-hGT">
+                                                                <rect key="frame" x="0.0" y="335.5" width="374" height="14.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get rate alerts straight to your email inbox" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qps-XR-a1P">
+                                                                        <rect key="frame" x="68" y="0.0" width="238" height="14.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r7L-27-U9Z">
+                                                                        <rect key="frame" x="0.0" y="13.5" width="374" height="1"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="1" id="4ha-65-R31"/>
+                                                                        </constraints>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
                                                 <color key="backgroundColor" name="Cowry-Blue"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="RIh-5i-f9w" secondAttribute="trailing" constant="20" id="B4Y-4d-s0x"/>
                                                     <constraint firstAttribute="height" constant="430" id="D4X-MO-lqg"/>
+                                                    <constraint firstItem="RIh-5i-f9w" firstAttribute="top" secondItem="Jeu-nT-R45" secondAttribute="top" constant="20" symbolic="YES" id="e8d-HF-TXH"/>
+                                                    <constraint firstAttribute="bottom" secondItem="RIh-5i-f9w" secondAttribute="bottom" constant="60" id="gRq-X8-EJr"/>
+                                                    <constraint firstItem="RIh-5i-f9w" firstAttribute="leading" secondItem="Jeu-nT-R45" secondAttribute="leading" constant="20" id="jiN-P6-4H0"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="customCornerRadius">
@@ -359,12 +445,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="charts" destination="pPe-3H-jay" id="Ufu-h2-dwJ"/>
                         <outlet property="convertButton" destination="9fK-aI-llU" id="mOU-F3-6tT"/>
                         <outlet property="fromCurrency" destination="eWy-Uv-9S5" id="nfb-Dn-ylY"/>
                         <outlet property="fromField" destination="3pU-N0-XEw" id="zIk-F8-5uk"/>
                         <outlet property="fromFlag" destination="7kF-VA-ZTn" id="jd5-LS-sg4"/>
                         <outlet property="fromView" destination="SoT-yD-jKU" id="TtO-Og-BP9"/>
                         <outlet property="fromViewLabel" destination="ld4-2F-TYo" id="Wga-qF-08c"/>
+                        <outlet property="sixtyDay" destination="ayU-lO-7T6" id="HSY-Zm-op1"/>
+                        <outlet property="sixtyDayIndicator" destination="JqP-sI-trI" id="ahU-Bs-AgR"/>
+                        <outlet property="thirtyDay" destination="EAQ-tZ-75g" id="gsp-7Y-RkL"/>
+                        <outlet property="thirtyDayIndicator" destination="5Gz-A1-i6i" id="iYk-hB-Kl5"/>
                         <outlet property="toCurrency" destination="8E8-y5-Qb5" id="GV2-NC-AOM"/>
                         <outlet property="toField" destination="CxK-7M-Rhk" id="cq5-MA-Ipk"/>
                         <outlet property="toFlag" destination="vXk-Ji-JGv" id="p3c-AG-HES"/>

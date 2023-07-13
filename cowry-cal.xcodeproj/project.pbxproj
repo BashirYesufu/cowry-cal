@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		407D65BB34BBF0C5D82CA089 /* Pods_cowry_cal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F3FD2190E324920CB5D23A /* Pods_cowry_cal.framework */; };
+		CA68DD3C2A60A64700175780 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68DD3B2A60A64600175780 /* Date+Extension.swift */; };
 		CA72DEEE2A5FF765004C3FE0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEED2A5FF765004C3FE0 /* ApiClient.swift */; };
 		CA72DEF02A60173E004C3FE0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEEF2A60173E004C3FE0 /* DashboardViewModel.swift */; };
 		CA72DEF32A602048004C3FE0 /* CowryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DEF22A602048004C3FE0 /* CowryModels.swift */; };
@@ -46,6 +47,7 @@
 		56F25D78ED4C8CA807B97C50 /* Pods-cowry-cal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cowry-cal.debug.xcconfig"; path = "Target Support Files/Pods-cowry-cal/Pods-cowry-cal.debug.xcconfig"; sourceTree = "<group>"; };
 		7657958B878A757AE2F55B10 /* Pods-cowry-cal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cowry-cal.release.xcconfig"; path = "Target Support Files/Pods-cowry-cal/Pods-cowry-cal.release.xcconfig"; sourceTree = "<group>"; };
 		B9F3FD2190E324920CB5D23A /* Pods_cowry_cal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cowry_cal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA68DD3B2A60A64600175780 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		CA72DEED2A5FF765004C3FE0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		CA72DEEF2A60173E004C3FE0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		CA72DEF22A602048004C3FE0 /* CowryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CowryModels.swift; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 			children = (
 				CA88DD872A5F6B3000AE766E /* UIView+Extension.swift */,
 				CA72DEF72A602D11004C3FE0 /* UIViewController+Extension.swift */,
+				CA68DD3B2A60A64600175780 /* Date+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA72DEF82A602D11004C3FE0 /* UIViewController+Extension.swift in Sources */,
+				CA68DD3C2A60A64700175780 /* Date+Extension.swift in Sources */,
 				CA88DD882A5F6B3000AE766E /* UIView+Extension.swift in Sources */,
 				CA88DD582A5F5AF600AE766E /* R.generated.swift in Sources */,
 				CA86261C2A5F414D004EA00E /* CowryButton.swift in Sources */,

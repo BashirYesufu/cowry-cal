@@ -26,12 +26,13 @@ class DashboardViewModel {
             }
     }
     
-    let apiKey = ""
+    let apiKey = "47e6a4a2c888adedce7afa9930d091c4"
     
     let error = PublishSubject<String>()
     let progress = BehaviorRelay<Bool>(value: false)
     let currencySymbolsResponse: PublishRelay<[String: String]> = PublishRelay()
     let currencyConversionResponse: PublishRelay<ConversionResponse> = PublishRelay()
+    let fluctuationRateResponse: PublishRelay<FluctuationRateResponse> = PublishRelay()
     
     func getAllSymbols(){
         progress.accept(true)
@@ -106,9 +107,30 @@ class DashboardViewModel {
             }
     }
     
-//http://data.fixer.io/api/fluctuation
-//    ? access_key = 47e6a4a2c888adedce7afa9930d091c4
-//    & start_date = 2015-12-01
-//    & end_date = 2015-12-24
+    func getDayFluctuation(days: Int) {
+        let dates = Date.getDate(forLastNDays: days)
+        makeAPIRequest(
+            url: URL(string: "http://data.fixer.io/api/fluctuation?access_key=\(apiKey)&start_date=\(dates.first!)&end_date=\(dates.last!)")!,
+            method: .get,
+            parameters: nil,
+            headers: nil) { result in
+                switch result {
+                    
+                case .success(let data):
+                    self.progress.accept(false)
+                    let json = JSON(data)
+                    let response = FluctuationRateResponse(json: json)
+                    if response.success {
+                        self.fluctuationRateResponse.accept(response)
+                    } else {
+                        self.error.onNext(response.error?.info ?? "Error getting currency fluctuations")
+                    }
+                    
+                case .failure(let error):
+                    self.progress.accept(false)
+                    self.error.onNext(error.localizedDescription)
+                }
+            }
+    }
     
 }

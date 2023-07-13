@@ -56,3 +56,42 @@ struct ConvError {
         code = json["code"].intValue
     }
 }
+
+struct FluctuationRateResponse {
+    let success: Bool
+    let timeseries: Bool
+    let startDate: String
+    let endDate: String
+    let base: String
+    let rates: [String: Rate]
+    let error: ConvError?
+    
+    struct Rate {
+        let usd: Double
+        let aud: Double
+        let cad: Double
+    }
+    
+    init(json: JSON) {
+        success = json["success"].boolValue
+        timeseries = json["timeseries"].boolValue
+        startDate = json["start_date"].stringValue
+        endDate = json["end_date"].stringValue
+        base = json["base"].stringValue
+        
+        var rateDict: [String: Rate] = [:]
+        if let ratesJSON = json["rates"].dictionary {
+            for (date, rateJSON) in ratesJSON {
+                let usd = rateJSON["USD"].doubleValue
+                let aud = rateJSON["AUD"].doubleValue
+                let cad = rateJSON["CAD"].doubleValue
+                
+                let rate = Rate(usd: usd, aud: aud, cad: cad)
+                rateDict[date] = rate
+            }
+        }
+        
+        rates = rateDict
+        error = ConvError(json: json["error"])
+    }
+}
