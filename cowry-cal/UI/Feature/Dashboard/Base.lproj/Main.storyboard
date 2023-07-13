@@ -205,20 +205,20 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Quh-Ng-dnw">
                                                                 <rect key="frame" x="0.0" y="260" width="374" height="22"/>
                                                                 <subviews>
-                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-89-WCI">
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D6l-89-WCI">
                                                                         <rect key="frame" x="56.5" y="0.0" width="261.5" height="22"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="oA1-1A-7hr">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="229.5" height="22"/>
+                                                                                <rect key="frame" x="0.0" y="6" width="229.5" height="10"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mid-market exchange at 13:33 UTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FoP-px-ii2">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="229.5" height="29"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="229.5" height="17"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                         <color key="textColor" name="Cowry-Blue"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ola-zf-PQ6">
-                                                                                        <rect key="frame" x="0.0" y="21" width="229.5" height="1"/>
+                                                                                        <rect key="frame" x="0.0" y="9" width="229.5" height="1"/>
                                                                                         <color key="backgroundColor" name="Cowry-Blue"/>
                                                                                         <constraints>
                                                                                             <constraint firstAttribute="height" constant="1" id="XD8-Tt-2KV"/>

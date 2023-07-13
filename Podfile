@@ -12,7 +12,7 @@ target 'cowry-cal' do
   pod 'MaterialComponents/Snackbar','109.6.0'
   pod 'SwiftyJSON', '~> 5.0'
   pod 'SnapKit', '~> 4.0.0'
-  # pod 'Charts', :git => 'https://github.com/danielgindi/Charts.git', :branch => 'master'
+  pod 'DGCharts'
   pod 'IQKeyboardManagerSwift'
 
   #Rx
