@@ -28,7 +28,7 @@ Connect your device via cable or network if you have it setup. Alternatively, yo
 
 Your mobile device may ask you to trust the app and the Computer, You can do this by going to Settings >> General >> VPN & Device Managemanet and select trust. Alternatively, Run your simulator for iOS and smash the build button. Easy right? Leggo!
 
-##NB: This app depends on fixer.io apis. However the api key used to test is a free version and such thorough testing was severely limited. Feel free to swap the key which is located at the DashboardViewModel file and you should have a smooth running experience.
+## NB: This app depends on fixer.io apis. However the api key used to test is a free version and such thorough testing was severely limited. Feel free to swap the key which is located at the DashboardViewModel file and you should have a smooth running experience.
 
 ## Screenshots of the app
 <table>
