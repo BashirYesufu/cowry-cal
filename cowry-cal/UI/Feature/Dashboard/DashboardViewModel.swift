@@ -13,6 +13,10 @@ import SwiftyJSON
 
 class DashboardViewModel {
     
+    /// API request handler using Alamofire .
+    ///
+    /// Takes the `URL`, `HTTPMethod`, `HTTPHeaders` and a trailing completion handler.
+    
     func makeAPIRequest(url: URL, method: HTTPMethod, parameters: Parameters?, headers: HTTPHeaders?, completion: @escaping (Result<Data, Error>) -> Void) {
         AF.request(url, method: method, parameters: parameters, headers: headers)
             .validate(statusCode: 200..<300)
@@ -26,6 +30,7 @@ class DashboardViewModel {
             }
     }
     
+    /// Fixer API key. This is a free version key and is extremely limited. Feel free to swap it out in order to test properly
     let apiKey = "47e6a4a2c888adedce7afa9930d091c4"
     
     let error = PublishSubject<String>()
@@ -34,6 +39,9 @@ class DashboardViewModel {
     let currencyConversionResponse: PublishRelay<ConversionResponse> = PublishRelay()
     let fluctuationRateResponse: PublishRelay<FluctuationRateResponse> = PublishRelay()
     
+    /// Gets a list of all the available currency symbols in a dictionary with a `String` key and `String` value .
+    ///
+    /// Returns `[String: String]`.
     func getAllSymbols(){
         progress.accept(true)
         makeAPIRequest(
@@ -61,6 +69,9 @@ class DashboardViewModel {
             }
     }
     
+    /// Converts from one currency to the other .
+    ///
+    /// Returns `ConversionResponse` object on success.
     func convert(from: String, to: String, amount: Int){
         
         if from.isEmpty {
@@ -107,6 +118,9 @@ class DashboardViewModel {
             }
     }
     
+    /// Gets the fluctuations for particular day range provided.
+    ///
+    /// Returns `FluctuationRateResponse` object on success.
     func getDayFluctuation(days: Int) {
         let dates = Date.getDate(forLastNDays: days)
         makeAPIRequest(

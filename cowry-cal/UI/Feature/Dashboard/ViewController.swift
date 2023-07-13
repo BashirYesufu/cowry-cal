@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     
     
     private let viewModel = DashboardViewModel()
-    let disposeBag = DisposeBag()
+    private let disposeBag = DisposeBag()
     private var symbols = [String]()
     private var currencySymbols = [String: String]()
     private var sets = [LineChartDataSet]()
