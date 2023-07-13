@@ -26,8 +26,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-F5-sae">
-                                <rect key="frame" x="0.0" y="48" width="414" height="848"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL2-F5-sae">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1j-0E-cc8" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
@@ -242,28 +242,28 @@
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FW9-7E-9tb">
-                                                <rect key="frame" x="0.0" y="620" width="414" height="380"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jeu-nT-R45">
+                                                <rect key="frame" x="0.0" y="570" width="414" height="430"/>
                                                 <color key="backgroundColor" name="Cowry-Blue"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="380" id="kyG-fI-XVU"/>
+                                                    <constraint firstAttribute="height" constant="430" id="D4X-MO-lqg"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="customCornerRadius">
-                                                        <real key="value" value="8"/>
+                                                        <real key="value" value="20"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="FW9-7E-9tb" firstAttribute="leading" secondItem="X1j-0E-cc8" secondAttribute="leading" id="FjQ-k1-FP1"/>
                                             <constraint firstItem="MGd-dt-DAc" firstAttribute="leading" secondItem="X1j-0E-cc8" secondAttribute="leading" constant="20" id="IKU-lZ-1iG"/>
                                             <constraint firstAttribute="height" constant="1000" id="LYy-Dg-Fvf"/>
                                             <constraint firstItem="MGd-dt-DAc" firstAttribute="top" secondItem="X1j-0E-cc8" secondAttribute="top" constant="30" id="Mco-jp-693"/>
-                                            <constraint firstAttribute="trailing" secondItem="FW9-7E-9tb" secondAttribute="trailing" id="Rq9-6u-Wp3"/>
-                                            <constraint firstAttribute="bottom" secondItem="FW9-7E-9tb" secondAttribute="bottom" id="TiI-5S-g3l"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jeu-nT-R45" secondAttribute="trailing" id="Rch-b8-uCC"/>
                                             <constraint firstAttribute="trailing" secondItem="MGd-dt-DAc" secondAttribute="trailing" constant="20" id="dYt-b6-eJg"/>
+                                            <constraint firstItem="Jeu-nT-R45" firstAttribute="leading" secondItem="X1j-0E-cc8" secondAttribute="leading" id="deK-NE-aNo"/>
+                                            <constraint firstAttribute="bottom" secondItem="Jeu-nT-R45" secondAttribute="bottom" id="jXj-Wj-sew"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -278,14 +278,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BL2-F5-sae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Wt-2Q-RiO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BL2-F5-sae" secondAttribute="trailing" id="Bqa-Xi-pgl"/>
-                            <constraint firstItem="X1j-0E-cc8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="JoT-3c-DFI"/>
-                            <constraint firstAttribute="bottom" secondItem="BL2-F5-sae" secondAttribute="bottom" id="dyF-Av-eZf"/>
-                            <constraint firstItem="BL2-F5-sae" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f6h-tm-srH"/>
+                            <constraint firstItem="BL2-F5-sae" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CA0-1f-sS6"/>
+                            <constraint firstAttribute="bottom" secondItem="BL2-F5-sae" secondAttribute="bottom" constant="-50" id="EEJ-s4-yOk"/>
+                            <constraint firstItem="BL2-F5-sae" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HDB-Qn-PN4"/>
+                            <constraint firstItem="BL2-F5-sae" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iud-x6-nhv"/>
+                            <constraint firstItem="X1j-0E-cc8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="uZA-da-shV"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="896"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
