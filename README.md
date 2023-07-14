@@ -19,6 +19,15 @@ Download or clone this repo by using the link below:
 https://github.com/BashirYesufu/cowry-cal.git
 ```
 
+This project includes third party libraries and such must be installed in order to run. Open up your mac terminal, change directories to where you have the project cloned, and run the below command using Cocoapods. Bear in mind you must have cocoapods installed on your device to do this. A quick google search will help you install this if you do not have it. You can also visit https://brew.sh/ to help with this installation.
+```
+pod install
+```
+If you're running on a Silicon chip mac i.e 2020 and newer, you might need to install ffi and then run
+```
+arch -x86_64 pod install
+```
+
 **Step 2:**
 
 Connect your device via cable or network if you have it setup. Alternatively, you could build it on the any simulator on your XCode: 
